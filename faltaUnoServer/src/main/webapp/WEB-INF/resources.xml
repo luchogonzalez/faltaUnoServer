@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Resource id="faltaUnoServer" type="javax.sql.DataSource">#Mon May 15 00:46:14 ART 2017
+jdbcDriver=com.mysql.jdbc.Driver
+password=21219nueve
+userName=a1edb6_matheu
+jdbcUrl=jdbc\:mysql\://mysql5009.hostbuddy.com\:3306/db_a1edb6_matheu?zeroDateTimeBehavior\=convertToNull
+</Resource>
+</resources>
