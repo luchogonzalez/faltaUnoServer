@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ar.com.utn.mobile.faltaunoserver.service;
 
 import ar.com.utn.mobile.faltaunoserver.UsuarioPartido;
@@ -60,14 +55,14 @@ public class UsuarioPartidoFacadeREST extends AbstractFacade<UsuarioPartido> {
 
     @POST
     @Override
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes(MediaType.APPLICATION_JSON)
     public void create(UsuarioPartido entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes(MediaType.APPLICATION_JSON)
     public void edit(@PathParam("id") PathSegment id, UsuarioPartido entity) {
         super.edit(entity);
     }
@@ -81,7 +76,7 @@ public class UsuarioPartidoFacadeREST extends AbstractFacade<UsuarioPartido> {
 
     @GET
     @Path("{id}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces(MediaType.APPLICATION_JSON)
     public UsuarioPartido find(@PathParam("id") PathSegment id) {
         ar.com.utn.mobile.faltaunoserver.UsuarioPartidoPK key = getPrimaryKey(id);
         return super.find(key);
@@ -89,14 +84,14 @@ public class UsuarioPartidoFacadeREST extends AbstractFacade<UsuarioPartido> {
 
     @GET
     @Override
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces(MediaType.APPLICATION_JSON)
     public List<UsuarioPartido> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces(MediaType.APPLICATION_JSON)
     public List<UsuarioPartido> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
