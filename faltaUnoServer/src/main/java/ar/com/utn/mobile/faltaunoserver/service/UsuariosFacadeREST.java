@@ -25,7 +25,7 @@ import javax.ws.rs.core.MediaType;
  * @author lgonzalez
  */
 @Stateless
-@Path("ar.com.utn.mobile.faltaunoserver.usuarios")
+@Path("Usuarios")
 public class UsuariosFacadeREST extends AbstractFacade<Usuarios> {
 
     @PersistenceContext(unitName = "ar.com.utn.mobile_faltaUnoServer_war_1.0-SNAPSHOTPU")

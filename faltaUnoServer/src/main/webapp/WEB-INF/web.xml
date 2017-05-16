@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <display-name>FaltaUno Servlet</display-name>
+        <servlet-name>ApplicationConfig</servlet-name>
+        <init-param>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>ar.com.utn.mobile.faltaunoserver.service.ApplicationConfig</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplicationConfig</servlet-name>
+        <url-pattern>/webresources/*</url-pattern>
+    </servlet-mapping>
+</web-app>

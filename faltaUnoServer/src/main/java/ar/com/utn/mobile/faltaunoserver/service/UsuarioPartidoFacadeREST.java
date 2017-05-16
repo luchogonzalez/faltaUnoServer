@@ -27,7 +27,7 @@ import javax.ws.rs.core.PathSegment;
  * @author lgonzalez
  */
 @Stateless
-@Path("ar.com.utn.mobile.faltaunoserver.usuariopartido")
+@Path("UsuarioPartido")
 public class UsuarioPartidoFacadeREST extends AbstractFacade<UsuarioPartido> {
 
     @PersistenceContext(unitName = "ar.com.utn.mobile_faltaUnoServer_war_1.0-SNAPSHOTPU")
